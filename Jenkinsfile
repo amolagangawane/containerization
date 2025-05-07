@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    tools {
+            maven 'maven'  // This name must match what you set in the UI
+        }
     stages {
 
     stage('Build with Maven') {
