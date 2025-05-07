@@ -10,13 +10,7 @@ pipeline {
                     sh 'mvn clean install'
                 }
             }
-     stage('Check Docker') {
-                steps {
-                    script {
-                        sh 'docker --version'  // Check if Docker is accessible
-                    }
-                }
-            }
+
         stage('Pull Docker Image') {
             steps {
                 script {
