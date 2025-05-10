@@ -15,7 +15,7 @@ pipeline {
             steps {
                 script {
                     // Pull Docker image from Docker Hub
-                    sh 'sudo docker pull amolagangawane1992/container:latest'
+                    sh 'docker pull amolagangawane1992/container:latest'
                 }
             }
         }
@@ -23,7 +23,7 @@ pipeline {
             steps {
                 script {
                     // Run the pulled Docker image
-                    sh 'sudo docker run -d -p 8888:8888 amolagangawane1992/container:latest'
+                    sh 'docker run -d -p 8888:8888 amolagangawane1992/container:latest'
                 }
             }
         }
