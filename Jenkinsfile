@@ -5,6 +5,12 @@ pipeline {
         }
     stages {
 
+        stage('Test Docker') {
+                    steps {
+                        sh 'docker --version'
+                    }
+        }
+
         stage('Build with Maven') {
                     steps {
                         sh 'mvn clean install'
