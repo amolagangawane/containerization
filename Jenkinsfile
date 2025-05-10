@@ -1,7 +1,5 @@
 pipeline {
-    agent {
-           label 'my-jenkins-agent'
-        }
+    agent any
     tools {
             maven 'maven'  // This name must match what you set in the UI
         }
