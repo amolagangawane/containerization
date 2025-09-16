@@ -22,6 +22,7 @@ public class ProductController {
     // GET all products
     @GetMapping
     public List<Product> getAllProducts() {
+        System.out.println("in the get all products");
         return productService.getAllProducts();
     }
 
